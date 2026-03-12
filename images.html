@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Galerie - SunProduction</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>📸 SunProduction</h1>
+    <p>Photographie & Vidéographie Professionnelle</p>
+</header>
+
+<section style="text-align:center; padding:20px;">
+    <h2>Notre Galerie Multimédia</h2>
+
+    <p>
+        SunProduction capture des moments uniques à travers des photographies
+        artistiques et des productions vidéo de haute qualité.
+    </p>
+</section>
+
+<section class="galerie">
+
+    <figure>
+        <img src="Image/mariage1.jpg" alt="Mariage">
+        <figcaption>Mariage élégant capturé avec une lumière naturelle douce.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/_72B9636.jpg" alt="Événement">
+        <figcaption>Couverture professionnelle d’un grand événement.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/_72B9656.jpg" alt="Portrait">
+        <figcaption>Portrait studio avec éclairage artistique moderne.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/1.jpg" alt="Concert">
+        <figcaption>Photographie dynamique d’un concert en direct.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/5042.JPG" alt="Clip musical">
+        <figcaption>Tournage d’un clip video en haute définition.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/FB_IMG_16230686675520423.jpg" alt="Nature">
+        <figcaption>Photographie nature mettant en valeur les couleurs naturelles.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/IMG-20250902-WA0256.jpg" alt="Studio">
+        <figcaption>Shooting professionnel en studio avec équipement moderne.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/IMG-20250902-WA0239.jpg" alt="Mode">
+        <figcaption>Projet mode et fashion pour une marque locale.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/v1.jpg" alt="Cérémonie">
+        <figcaption>Cérémonie officielle filmée et photographiée par SunProduction.</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Image/91.JPG" alt="Production vidéo">
+        <figcaption>Équipe SunProduction en pleine production vidéo professionnelle.</figcaption>
+    </figure>
+
+</section>
+
+<div style="text-align:center; margin:30px;">
+    <a href="index.html">⬅ Retour à l'accueil</a>
+</div>
+
+<footer style="text-align:center; padding:10px; background:#1e3d59; color:white;">
+    © 2026 SunProduction - Tous droits réservés
+</footer>
+
+</body>
+</html>

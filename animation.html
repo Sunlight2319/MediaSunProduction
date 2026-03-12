@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Animations - SunProduction</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.galerie-animation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.anim {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+}
+
+/* Animation 1: Bouncing Ball */
+.bounce { background: red; animation: bounce 2s infinite; }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+
+/* Animation 2: Rotation */
+.rotate { background: blue; animation: rotate 2s linear infinite; }
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Animation 3: Scaling */
+.scale { background: green; animation: scale 2s infinite; }
+@keyframes scale {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+}
+
+/* Animation 4: Color Change */
+.color { background: purple; animation: colorchange 3s infinite; }
+@keyframes colorchange {
+  0% { background-color: purple; }
+  25% { background-color: orange; }
+  50% { background-color: yellow; }
+  75% { background-color: pink; }
+  100% { background-color: purple; }
+}
+
+/* Animation 5: Move Right */
+.move { background: teal; animation: moveRight 2s infinite; position: relative; }
+@keyframes moveRight {
+  0%,100% { left: 0; }
+  50% { left: 50px; }
+}
+
+/* Les autres animations 6 à 30 peuvent suivre le même principe */
+.slideup { background: #f39c12; animation: slideUp 2s infinite; }
+@keyframes slideUp { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+
+.slidedown { background: #8e44ad; animation: slideDown 2s infinite; }
+@keyframes slideDown { 0%,100% { transform: translateY(0); } 50% { transform: translateY(30px); } }
+
+.fade { background: #16a085; animation: fade 2s infinite; }
+@keyframes fade { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.pulse { background: #e74c3c; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+
+.flip { background: #3498db; animation: flip 2s infinite; }
+@keyframes flip { 0%,100% { transform: rotateY(0deg); } 50% { transform: rotateY(180deg); } }
+
+/* Pour aller jusqu’à 30, on peut dupliquer avec variations de couleur et animation duration */
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎞️ SunProduction-Animations</h1>
+    <p></p>
+</header>
+
+<section style="text-align:center; padding:20px;">
+    <h2>Galerie Animations</h2>
+    <p>
+        SunProduction crée des animations interactives pour le web,
+        allant des mouvements simples aux effets visuels complexes.
+    </p>
+</section>
+
+<section class="galerie-animation">
+
+<figure>
+    <div class="anim bounce"></div>
+    <figcaption>Bouncing Ball</figcaption>
+</figure>
+
+<figure>
+    <div class="anim rotate"></div>
+    <figcaption>Rotation</figcaption>
+</figure>
+
+<figure>
+    <div class="anim scale"></div>
+    <figcaption>Scaling</figcaption>
+</figure>
+
+<figure>
+    <div class="anim color"></div>
+    <figcaption>Changement de Couleur</figcaption>
+</figure>
+
+<figure>
+    <div class="anim move"></div>
+    <figcaption>Déplacement Latéral</figcaption>
+</figure>
+
+<figure>
+    <div class="anim slideup"></div>
+    <figcaption>Slide Up</figcaption>
+</figure>
+
+<figure>
+    <div class="anim slidedown"></div>
+    <figcaption>Slide Down</figcaption>
+</figure>
+
+<figure>
+    <div class="anim fade"></div>
+    <figcaption>Fade In/Out</figcaption>
+</figure>
+
+<figure>
+    <div class="anim pulse"></div>
+    <figcaption>Pulsation</figcaption>
+</figure>
+
+<figure>
+    <div class="anim flip"></div>
+    <figcaption>Flip</figcaption>
+</figure>
+
+<!-- Dupliquer pour atteindre 30 animations avec variations de couleurs et timing -->
+<figure><div class="anim bounce" style="background:#f1c40f; animation-duration:1.5s;"></div><figcaption>Bounce 2</figcaption></figure>
+<figure><div class="anim rotate" style="background:#2ecc71; animation-duration:3s;"></div><figcaption>Rotation 2</figcaption></figure>
+<figure><div class="anim scale" style="background:#e67e22; animation-duration:2.5s;"></div><figcaption>Scale 2</figcaption></figure>
+<figure><div class="anim color" style="animation-duration:4s;"></div><figcaption>Color Change 2</figcaption></figure>
+<figure><div class="anim move" style="background:#1abc9c; animation-duration:1.8s;"></div><figcaption>Move Right 2</figcaption></figure>
+<figure><div class="anim slideup" style="background:#9b59b6;"></div><figcaption>Slide Up 2</figcaption></figure>
+<figure><div class="anim slidedown" style="background:#34495e;"></div><figcaption>Slide Down 2</figcaption></figure>
+<figure><div class="anim fade" style="background:#c0392b;"></div><figcaption>Fade 2</figcaption></figure>
+<figure><div class="anim pulse" style="background:#2980b9;"></div><figcaption>Pulse 2</figcaption></figure>
+<figure><div class="anim flip" style="background:#16a085;"></div><figcaption>Flip 2</figcaption></figure>
+<figure><div class="anim bounce" style="background:#d35400;"></div><figcaption>Bounce 3</figcaption></figure>
+<figure><div class="anim rotate" style="background:#27ae60;"></div><figcaption>Rotation 3</figcaption></figure>
+<figure><div class="anim scale" style="background:#8e44ad;"></div><figcaption>Scale 3</figcaption></figure>
+<figure><div class="anim color" style="animation-duration:5s;"></div><figcaption>Color Change 3</figcaption></figure>
+<figure><div class="anim move" style="background:#e74c3c;"></div><figcaption>Move Right 3</figcaption></figure>
+<figure><div class="anim slideup" style="background:#f39c12;"></div><figcaption>Slide Up 3</figcaption></figure>
+<figure><div class="anim slidedown" style="background:#2c3e50;"></div><figcaption>Slide Down 3</figcaption></figure>
+<figure><div class="anim fade" style="background:#9b59b6;"></div><figcaption>Fade 3</figcaption></figure>
+<figure><div class="anim pulse" style="background:#1abc9c;"></div><figcaption>Pulse 3</figcaption></figure>
+<figure><div class="anim flip" style="background:#e67e22;"></div><figcaption>Flip 3</figcaption></figure>
+
+</section>
+
+<div style="text-align:center; margin:30px;">
+    <a href="index.html">⬅ Retour à l'accueil</a>
+</div>
+
+<footer style="text-align:center; padding:10px; background:#1e3d59; color:white;">
+    © 2026 SunProduction - Tous droits réservés
+</footer>
+
+</body>
+</html>

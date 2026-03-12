@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Page Jeux - SunProduction</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+}
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+    background: black;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #00ffcc;
+    color: black;
+}
+
+
+header{
+    padding:20px;
+    background:#00000080;
+}
+
+h1{margin:0;}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.game{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+button{
+    padding:8px 15px;
+    border:none;
+    background:#2a5298;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e3c72;
+}
+
+input{
+    padding:5px;
+    margin:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🎮 Page des Jeux interactifs</h1>
+<p>Choisir un jeux qui vous plait de jouer</p>
+</header>
+<nav>
+    <a href="index.html">🏠 Accueil</a>
+</nav>
+
+
+<div class="container">
+
+<!-- 1 Nombre mystère -->
+<div class="game">
+<h3>1️⃣ Nombre Mystère</h3>
+<input type="number" id="guess">
+<button onclick="guessNumber()">Deviner</button>
+<p id="result1"></p>
+</div>
+
+<!-- 2 Pair ou Impair -->
+<div class="game">
+<h3>2️⃣ Pair ou Impair</h3>
+<input type="number" id="number2">
+<button onclick="pairImpair()">Vérifier</button>
+<p id="result2"></p>
+</div>
+
+<!-- 3 Calcul rapide -->
+<div class="game">
+<h3>3️⃣ Calcul Rapide (5 + 7)</h3>
+<input type="number" id="calc">
+<button onclick="checkCalc()">Valider</button>
+<p id="result3"></p>
+</div>
+
+<!-- 4 Clique rapide -->
+<div class="game">
+<h3>4️⃣ Clique Rapide</h3>
+<button onclick="countClick()">Clique-moi</button>
+<p id="clickCount">0 clic</p>
+</div>
+
+<!-- 5 Couleur aléatoire -->
+<div class="game">
+<h3>5️⃣ Couleur Surprise</h3>
+<button onclick="changeColor()">Changer couleur</button>
+</div>
+
+<!-- 6 Heure actuelle -->
+<div class="game">
+<h3>6️⃣ Heure Actuelle</h3>
+<button onclick="showTime()">Afficher</button>
+<p id="time"></p>
+</div>
+
+<!-- 7 Lettre Majuscule -->
+<div class="game">
+<h3>7️⃣ Majuscule</h3>
+<input type="text" id="text">
+<button onclick="toUpper()">Convertir</button>
+<p id="result7"></p>
+</div>
+
+<!-- 8 Random Emoji -->
+<div class="game">
+<h3>8️⃣ Emoji Aléatoire</h3>
+<button onclick="randomEmoji()">Générer</button>
+<p id="emoji"></p>
+</div>
+
+<!-- 9 Test âge -->
+<div class="game">
+<h3>9️⃣ Vérifier âge</h3>
+<input type="number" id="age">
+<button onclick="checkAge()">Vérifier</button>
+<p id="result9"></p>
+</div>
+
+<!-- 10 Motivation -->
+<div class="game">
+<h3>🔟 Message Motivation</h3>
+<button onclick="motivation()">Inspire-moi</button>
+<p id="msg"></p>
+</div>
+
+</div>
+
+<script>
+
+// 1 Nombre mystère
+let secret = Math.floor(Math.random()*10)+1;
+function guessNumber(){
+    let g = document.getElementById("guess").value;
+    document.getElementById("result1").innerText =
+    (g == secret) ? "Bravo !" : "Essaie encore !";
+}
+
+// 2 Pair ou impair
+function pairImpair(){
+    let n = document.getElementById("number2").value;
+    document.getElementById("result2").innerText =
+    (n % 2 == 0) ? "Nombre Pair" : "Nombre Impair";
+}
+
+// 3 Calcul
+function checkCalc(){
+    let c = document.getElementById("calc").value;
+    document.getElementById("result3").innerText =
+    (c == 12) ? "Correct !" : "Faux !";
+}
+
+// 4 Compteur clic
+let count=0;
+function countClick(){
+    count++;
+    document.getElementById("clickCount").innerText = count + " clic";
+}
+
+// 5 Couleur aléatoire
+function changeColor(){
+    let colors=["red","green","blue","purple","orange"];
+    document.body.style.background =
+    colors[Math.floor(Math.random()*colors.length)];
+}
+
+// 6 Heure
+function showTime(){
+    document.getElementById("time").innerText =
+    new Date().toLocaleTimeString();
+}
+
+// 7 Majuscule
+function toUpper(){
+    let t = document.getElementById("text").value;
+    document.getElementById("result7").innerText = t.toUpperCase();
+}
+
+// 8 Emoji
+function randomEmoji(){
+    let emojis=["😀","😂","🔥","🎉","🚀","💡","🌟"];
+    document.getElementById("emoji").innerText =
+    emojis[Math.floor(Math.random()*emojis.length)];
+}
+
+// 9 Age
+function checkAge(){
+    let a = document.getElementById("age").value;
+    document.getElementById("result9").innerText =
+    (a >= 18) ? "Majeur" : "Mineur";
+}
+
+// 10 Motivation
+function motivation(){
+    let messages=[
+    "Tu peux réussir !",
+    "N'abandonne jamais !",
+    "Travaille dur !",
+    "Sois confiant !",
+    "Continue à apprendre !"
+    ];
+    document.getElementById("msg").innerText =
+    messages[Math.floor(Math.random()*messages.length)];
+}
+
+</script>
+
+</body>
+</html>

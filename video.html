@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Vidéos - SunProduction</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.galerie-video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+figure {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 SunProduction</h1>
+    <p>Nos Réalisations Vidéo Professionnelles</p>
+</header>
+
+<section style="text-align:center; padding:20px;">
+    <h2>Galerie Vidéographique</h2>
+
+    <p>
+        SunProduction est spécialisée dans la production de vidéos
+        professionnelles adaptées aux mariages, événements,
+        clips musicaux et projets commerciaux.
+    </p>
+
+    <p>
+        Chaque production est réalisée avec un équipement moderne
+        garantissant une haute qualité d’image et de son.
+    </p>
+</section>
+
+<section class="galerie-video">
+
+    <figure>
+        <video controls>
+            <source src="videos/mariage.mp4" type="video/mp4">
+        </video>
+        <figcaption>Film complet d’un mariage capturé en haute définition.</figcaption>
+    </figure>
+
+    <figure>
+        <video controls>
+            <source src="videos/evenement.mp4" type="video/mp4">
+        </video>
+        <figcaption>Couverture vidéo d’un événement professionnel.</figcaption>
+    </figure>
+
+    <figure>
+        <video controls>
+            <source src="videos/cinemavideo.mp4" type="video/mp4">
+        </video>
+        <figcaption>Tournage d’un clip musical avec effets cinématographiques.</figcaption>
+    </figure>
+
+    <figure>
+        <video controls>
+            <source src="videos/rew.mp4" type="video/mp4">
+        </video>
+        <figcaption>Vidéo promotionnelle pour une entreprise locale.</figcaption>
+    </figure>
+
+    <figure>
+        <video controls>
+            <source src="videos/VID_20250524_191210.mp4" type="video/mp4">
+        </video>
+        <figcaption>Documentaire court produit par l’équipe SunProduction.</figcaption>
+    </figure>
+
+</section>
+
+<div style="text-align:center; margin:30px;">
+    <a href="index.html">⬅ Retour à l'accueil</a>
+</div>
+
+<footer style="text-align:center; padding:10px; background:#1e3d59; color:white;">
+    © 2026 SunProduction - Tous droits réservés
+</footer>
+
+</body>
+</html>
