@@ -8,52 +8,34 @@
 
 body{
 font-family: Arial;
-background:#f4f6f9;
+background:#f2f2f2;
 margin:0;
 }
 
 header{
-background:#1e3a8a;
+background:#0f172a;
 color:white;
 padding:20px;
 text-align:center;
 }
 
-nav{
-background:#2563eb;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-weight:bold;
-}
-
 .container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:20px;
 padding:20px;
 }
 
 .card{
 background:white;
-width:300px;
 padding:15px;
 border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 8px rgba(0,0,0,0.2);
 text-align:center;
 }
 
-footer{
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:10px;
+audio{
+width:100%;
 }
 
 </style>
@@ -64,90 +46,82 @@ padding:10px;
 
 <header>
 <h1>🎵 Galerie Audio</h1>
-<p>Collection des contenus audio de MediaSunProduction</p>
+<p>Collection de musiques utilisées dans MediaSunProduction</p>
 </header>
-
-<nav>
-<a href="index.html">Accueil</a>
-</nav>
 
 <div class="container">
 
 <div class="card">
+<p>Musique instrumentale relaxante</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
 </audio>
-<p>Musique instrumentale relaxante.</p>
 </div>
 
 <div class="card">
+<p>Musique électronique moderne</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
 </audio>
-<p>Composition musicale dynamique.</p>
 </div>
 
 <div class="card">
+<p>Composition musicale dynamique</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">
 </audio>
-<p>Musique électronique moderne.</p>
 </div>
 
 <div class="card">
+<p>Ambiance sonore artistique</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3">
 </audio>
-<p>Ambiance sonore pour détente.</p>
 </div>
 
 <div class="card">
+<p>Musique douce et calme</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3">
 </audio>
-<p>Musique douce et relaxante.</p>
 </div>
 
 <div class="card">
+<p>Audio créatif multimédia</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3">
 </audio>
-<p>Composition artistique audio.</p>
 </div>
 
 <div class="card">
+<p>Musique rythmique numérique</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3">
 </audio>
-<p>Musique rythmique moderne.</p>
 </div>
 
 <div class="card">
+<p>Composition expérimentale</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3">
 </audio>
-<p>Audio créatif multimédia.</p>
 </div>
 
 <div class="card">
+<p>Audio artistique moderne</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3">
 </audio>
-<p>Musique expérimentale.</p>
 </div>
 
 <div class="card">
+<p>Musique numérique créative</p>
 <audio controls>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" type="audio/mpeg">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3">
 </audio>
-<p>Audio artistique numérique.</p>
 </div>
 
 </div>
-
-<footer>
-<p>© 2026 MediaSunProduction | Projet Multimédia</p>
-</footer>
 
 </body>
 </html>
