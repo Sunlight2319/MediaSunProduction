@@ -2,210 +2,152 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Audio - SunProduction</title>
-<link rel="stylesheet" href="style.css">
+<title>Audio - MediaSunProduction</title>
 
 <style>
-.galerie-audio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+
+body{
+font-family: Arial;
+background:#f4f6f9;
+margin:0;
 }
 
-figure {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+header{
+background:#1e3a8a;
+color:white;
+padding:20px;
+text-align:center;
 }
 
-audio {
-    width: 100%;
-    margin-top: 10px;
+nav{
+background:#2563eb;
+padding:10px;
+text-align:center;
 }
 
-figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #444;
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
 }
 
-.description {
-    font-size: 13px;
-    color: #666;
-    margin-top: 5px;
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
 }
+
+.card{
+background:white;
+width:300px;
+padding:15px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:10px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>🎵 SunProduction</h1>
-    <p>Studio Professionnel d’Enregistrement et Production Audio</p>
+<h1>🎵 Galerie Audio</h1>
+<p>Collection des contenus audio de MediaSunProduction</p>
 </header>
 
-<section style="text-align:center; padding:20px;">
-    <h2>Notre Bibliothèque Audio Professionnelle</h2>
+<nav>
+<a href="index.html">Accueil</a>
+</nav>
 
-    <p>
-        SunProduction propose une large variété de productions sonores
-        adaptées aux événements, aux projets artistiques et aux entreprises.
-        Chaque contenu audio est enregistré et mixé avec un matériel professionnel.
-    </p>
-</section>
+<div class="container">
 
-<section class="galerie-audio">
-
-
-
-<!-- 2 -->
-<figure>
-    <figcaption>🎤 Enregistrement Studio</figcaption>
-    <audio controls><source src="facebook_video_1758124839609.mp3" type="audio/mpeg"></audio>
-    <p class="description">Session d’enregistrement réalisée dans notre studio professionnel.</p>
-</figure>
-
-<!-- 3 -->
-<figure>
-    <figcaption>📻 Podcast Interview</figcaption>
-    <audio controls><source src="interview.mp3" type="audio/mpeg"></audio>
-    <p class="description">Podcast informatif enregistré avec une qualité sonore claire et nette.</p>
-</figure>
-
-<!-- 4 -->
-<figure>
-    <figcaption>📢 Publicité Radio</figcaption>
-    <audio controls><source src="agakino.mp3" type="audio/mpeg"></audio>
-    <p class="description">Spot publicitaire dynamique destiné à la diffusion radio et digitale.</p>
-</figure>
-
-<!-- 5 -->
-<figure>
-    <figcaption>🎧 Mixage Musical</figcaption>
-    <audio controls><source src="facebook_video_1737701937747.mp3" type="audio/mpeg"></audio>
-    <p class="description">Mixage professionnel optimisé pour une diffusion haute qualité.</p>
-</figure>
-
-<!-- 6 -->
-<figure>
-    <figcaption>🎼 Instrumental Live</figcaption>
-    <audio controls><source src="facebook_video_1745438090163.mp3" type="audio/mpeg"></audio>
-    <p class="description">Performance instrumentale enregistrée en session live.</p>
-</figure>
-
-<!-- 7 -->
-<figure>
-    <figcaption>🎙️ Conférence Officielle</figcaption>
-    <audio controls><source src="facebook_video_1758116193965.mp3" type="audio/mpeg"></audio>
-    <p class="description">Enregistrement d’une conférence avec captation sonore optimisée.</p>
-</figure>
-
-<!-- 8 -->
-<figure>
-    <figcaption>🎵 Session Acoustique</figcaption>
-    <audio controls><source src="facebook_video_1758116558402.mp3" type="audio/mpeg"></audio>
-    <p class="description">Performance acoustique naturelle avec ambiance studio contrôlée.</p>
-</figure>
-
-<!-- 9 -->
-<figure>
-    <figcaption>📀 Mastering Audio</figcaption>
-    <audio controls><source src="facebook_video_1758116624824.mp3" type="audio/mpeg"></audio>
-    <p class="description">Mastering professionnel garantissant équilibre et puissance sonore.</p>
-</figure>
-
-<!-- 10 -->
-<figure>
-    <figcaption>🎬 Bande Sonore Film</figcaption>
-    <audio controls><source src="facebook_video_1758116954953.mp3" type="audio/mpeg"></audio>
-    <p class="description">Musique de fond créée pour accompagner un court métrage.</p>
-</figure>
-
-<!-- 11 -->
-<figure>
-    <figcaption>🎶 Sound Design Événement</figcaption>
-    <audio controls><source src="facebook_video_1758117021449.mp3" type="audio/mpeg"></audio>
-    <p class="description">Création sonore personnalisée pour un événement spécial.</p>
-</figure>
-
-<!-- 12 -->
-<figure>
-    <figcaption>🎤 Voix Off Documentaire</figcaption>
-    <audio controls><source src="facebook_video_1758116684536.mp3" type="audio/mpeg"></audio>
-    <p class="description">Narration professionnelle destinée à un documentaire éducatif.</p>
-</figure>
-
-<!-- 13 -->
-<figure>
-    <figcaption>📻 Podcast Éducatif</figcaption>
-    <audio controls><source src="facebook_video_1758116193965.mp3" type="audio/mpeg"></audio>
-    <p class="description">Épisode éducatif enregistré en studio avec réduction de bruit.</p>
-</figure>
-
-<!-- 14 -->
-<figure>
-    <figcaption>📢 Promotion Radio</figcaption>
-    <audio controls><source src="facebook_video_1758116570198.mp3" type="audio/mpeg"></audio>
-    <p class="description">Message promotionnel destiné aux médias radio.</p>
-</figure>
-
-<!-- 15 -->
-<figure>
-    <figcaption>🎧 Remix Studio</figcaption>
-    <audio controls><source src="facebook_video_1758124584483.mp3" type="audio/mpeg"></audio>
-    <p class="description">Remix musical retravaillé avec effets sonores modernes.</p>
-</figure>
-
-<!-- 16 -->
-<figure>
-    <figcaption>🎼 Musique Traditionnelle</figcaption>
-    <audio controls><source src="facebook_video_1758124402899.mp3" type="audio/mpeg"></audio>
-    <p class="description">Enregistrement d’une musique traditionnelle locale.</p>
-</figure>
-
-<!-- 17 -->
-<figure>
-    <figcaption>🎙️ Interview Artiste</figcaption>
-    <audio controls><source src="facebook_video_1737065933926.mp3" type="audio/mpeg"></audio>
-    <p class="description">Interview exclusive réalisée dans notre studio professionnel.</p>
-</figure>
-
-<!-- 18 -->
-<figure>
-    <figcaption>🎵 Performance Live</figcaption>
-    <audio controls><source src="facebook_video_1758124374170.mp3" type="audio/mpeg"></audio>
-    <p class="description">Captation sonore d’une performance live sur scène.</p>
-</figure>
-
-<!-- 19 -->
-<figure>
-    <figcaption>📀 Production Complète</figcaption>
-    <audio controls><source src="facebook_video_1758117112931.mp3" type="audio/mpeg"></audio>
-    <p class="description">Production musicale complète incluant enregistrement et mastering.</p>
-</figure>
-
-<!-- 20 -->
-<figure>
-    <figcaption>🎬 Bande Annonce Sonore</figcaption>
-    <audio controls><source src="facebook_video_1758117639363.mp3" type="audio/mpeg"></audio>
-    <p class="description">Bande sonore dynamique utilisée pour une bande annonce vidéo.</p>
-</figure>
-
-</section>
-
-<div style="text-align:center; margin:30px;">
-    <a href="index.html">⬅ Retour à l'accueil</a>
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+<p>Musique instrumentale relaxante.</p>
 </div>
 
-<footer style="text-align:center; padding:10px; background:#1e3d59; color:white;">
-    © 2026 SunProduction - Tous droits réservés
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+</audio>
+<p>Composition musicale dynamique.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+</audio>
+<p>Musique électronique moderne.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+</audio>
+<p>Ambiance sonore pour détente.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" type="audio/mpeg">
+</audio>
+<p>Musique douce et relaxante.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg">
+</audio>
+<p>Composition artistique audio.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" type="audio/mpeg">
+</audio>
+<p>Musique rythmique moderne.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+</audio>
+<p>Audio créatif multimédia.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg">
+</audio>
+<p>Musique expérimentale.</p>
+</div>
+
+<div class="card">
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" type="audio/mpeg">
+</audio>
+<p>Audio artistique numérique.</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 MediaSunProduction | Projet Multimédia</p>
 </footer>
 
 </body>
-
 </html>
-
-
